@@ -1,0 +1,468 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,400italic,300italic,800);
+
+@font-face {
+  font-family: "Bebas Neue";
+  font-weight: 600;
+  src: url("../assets/fonts/BebasNeue Bold.otf");
+}
+
+@font-face {
+  font-family: "Bebas Neue";
+  font-weight: 400;
+  src: url("../assets/fonts/BebasNeue Regular.otf");
+}
+
+body {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  margin: 0;
+
+  text-align: center;
+}
+
+.os-font {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#banner, #footer {
+  position: absolute;
+  top: 0;
+
+  width: 100vw;
+
+  text-align: center;
+
+  background-image: url(../assets/banner.png);
+  background-size: 100% 100%;
+}
+
+#banner {
+  height: 30vh;
+}
+
+#footer {
+  position: relative;
+  top: inherit;
+
+  height: 25vw;
+
+  background-image: url(../assets/footer.png);
+}
+
+#banner #written_logo {
+  display: inline-block;
+  position: relative;
+  top: 8px;
+
+  margin-top: calc(5vw - 50px);
+
+  color: #FAFAFA;
+}
+
+#written_logo .custom-logo-subtext {
+  margin: -5px 0 0 0;
+  font-size: 10.2pt;
+}
+
+#banner nav {
+  display: inline-block;
+}
+
+#banner nav ul {
+  list-style-type: none;
+
+  color: #FFF;
+}
+
+ul li {
+  display: inline-block;
+  vertical-align: top;
+
+  margin: 0px 10px;
+
+  width: 100px;
+
+  text-transform: uppercase;
+
+  font-size: 10pt;
+  font-weight: 600;
+  letter-spacing: 1pt;
+}
+
+#home_bg {
+  width: 100vw;
+  padding: 20vw 0 10vw 0;
+
+  text-align: center;
+
+  background-image: url(../assets/home_bg.jpg);
+  background-size: 100% auto;
+  background-position: center center;
+}
+
+#blue_banner {
+  padding: 20px 0px;
+  background-color: #003472;
+
+  color: #FAFAFA;
+}
+
+#paul_rand_attr {
+  position: relative;
+  left: 5vw;
+}
+
+#contact_hero,
+#submit_portfolio_hero {
+  background-image: url(../assets/contact_hero.png);
+  background-size: cover;
+  background-position: center center;
+
+  margin-top: 7vw;
+
+  width: 100vw;
+  padding: 10vw 0;
+
+  z-index: -1;
+}
+
+#submit_portfolio_hero {
+  background-image: url(../assets/submit_portfolio_hero.jpg);
+}
+
+li a {
+  text-decoration: none;
+  color: #FAFAFA;
+}
+
+#form_container {
+  margin: 50px 0px;
+  display: inline-block;
+}
+
+#form_sidebar {
+  float: left;
+  width: 10vw;
+  height: 100%;
+
+  background-image: url(../assets/contact_us_sidebar.jpg);
+  background-size: 100% 100%;
+}
+
+#form_container form {
+  text-align: center;
+  position: relative;
+
+  float: left;
+  width: 60vw;
+  height: auto;
+}
+
+#form_container form input[type="text"],
+#form_container form input[type="email"],
+#form_container form input[type="tel"],
+#form_container form textarea {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14pt;
+  font-weight: 300;
+  font-style: italic;
+
+  width: 70%;
+  border: 1px solid #CCC;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+#form_container form textarea {
+  height: 130px;
+}
+
+#form_container button {
+  background-color: #015697;
+  padding: 15px 25px 10px 25px;
+  font-family: "Bebas Neue", "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 16pt;
+  font-weight: 400;
+  border: none;
+  color: #FAFAFA;
+
+  outline: none;
+
+  transition: all 0.3s ease;
+}
+
+#form_container button:hover {
+  filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
+  -moz-filter: brightness(1.1);
+}
+
+#form_container button:active {
+  filter: brightness(0.9);
+  -webkit-filter: brightness(0.9);
+  -moz-filter: brightness(0.9);
+}
+
+blockquote {
+  display: inline-block;
+
+  font-size: 28pt;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 18pt;
+}
+
+h2.body {
+  font-family: "Bebas Neue";
+  font-size: 28pt;
+  font-weight: 600;
+}
+
+.blue {
+  color: #015697;
+}
+
+.blue-bg {
+  background-color: #d6e4ed
+}
+
+.p-20 {
+  padding: 20px;
+}
+
+h1.margin-top {
+  margin-top: 40px;
+}
+
+hr.red {
+  border: none;
+  border-bottom: 8px solid #7c0817;
+
+  margin: 0;
+}
+
+img.bubble {
+  display: inline-block;
+  vertical-align: top;
+
+  width: 300px;
+  height: 300px;
+  margin: 0px 20px;
+
+  border-radius: 160px;
+
+  border: 10px solid #015697;
+
+  background-color: #EEE;
+}
+
+.profile-box {
+  display: inline-block;
+  vertical-align: top;
+
+  margin-top: 35px;
+
+  border-left: 10px solid #015697;
+  padding: 0px 20px;
+}
+
+.profile-box h3 {
+  margin-top: 0;
+}
+
+.profile-box p {
+  margin-bottom: 0;
+}
+
+.w-400 {
+  width: 400px;
+}
+
+.w-33 {
+  display: inline-block;
+
+  width: 33%;
+}
+
+.w-40 {
+  width: 40%;
+}
+
+.w-50 {
+  display: inline-block;
+  width: 49.5% !important;
+
+  vertical-align: top;
+}
+
+.w-70 {
+  width: 70% !important;
+  display: inline-block;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.left-align {
+  margin: 0 0 0 auto;
+}
+
+.m-bottom-20 {
+  margin-bottom: 20px !important;
+}
+
+.m-left-25 {
+  margin-left: 25px !important;
+}
+
+.p-top-20 {
+  padding-top: 20px;
+}
+
+.tabs-right {
+  width: 500px;
+  height: 40px;
+
+  text-align: left;
+
+  margin-right: 0;
+  margin-left: auto;
+
+  background-image: url(../assets/tabs.png);
+  background-size: 100% 100%;
+}
+
+.date {
+  display: inline-block;
+}
+
+.lower-date {
+  position: relative;
+  top: -5px;
+  margin-left: 30px !important;
+}
+
+.event-name {
+  display: inline-block;
+  vertical-align: top;
+
+  font-size: 14pt;
+
+  margin-left: 40px;
+  margin-top: 8px;
+}
+
+.event-description {
+  margin: 30px 30px 30px auto;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.r-top-5 {
+  position: relative;
+
+  top: 5px;
+}
+
+.mini-profile-bubble {
+  display: inline-block;
+
+  width: 70px;
+  height: 70px;
+  border-radius: 35px;
+
+  background-color: #444;
+}
+
+.paragraph-insert {
+  margin: 50px 0px;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.p-50 {
+  width: calc(100% - 100px);
+  padding: 50px;
+}
+
+.h-80 {
+  height: 80px;
+}
+
+.no-padding-sides {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.light {
+  font-weight: 300;
+}
+
+.normal {
+  font-weight: 400;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.ultra-bold {
+  font-weight: 800;
+}
+
+.small {
+  font-size: 11pt;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.red {
+  color: #7c0817;
+}
+
+.white {
+  color: #FFF;
+}
+
+.left {
+  text-align: left;
+}
+
+.w-40 {
+  width: 40%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.float-right {
+  float: right;
+}
+
+.clear-float {
+  clear: both;
+}
+
+@media (max-width: 749px) {
+  #form_sidebar {
+    height: 534px;
+  }
+}
+
+@media (max-width: 905px) {
+
+}

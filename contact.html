@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="public/css/main.css" media="screen" title="Main Stylesheet" charset="utf-8">
+
+    <meta charset="utf-8">
+
+    <title>FDU Demo Site</title>
+  </head>
+  <body>
+    <div id="banner">
+      <div id="written_logo">
+        <h2 class="normal no-margin uppercase bold">FDU Graphic Design</h2>
+        <p class="custom-logo-subtext">Visual and Performing Arts Department</p>
+      </div>
+
+      <nav>
+        <ul>
+          <li>Our School</li>
+          <li>Academic Programs</li>
+          <li>Prospective Students</li>
+          <li>Community</li>
+          <li>Calendar</li>
+          <li>Student Gallery</li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+    </div>
+
+    <div id="contact_hero">
+      <blockquote class="white italic w-40">
+        We're very font of you<br>
+        Because you're just our type.
+      </blockquote>
+    </div>
+    <hr class="red">
+
+    <h1 class="light p-20">Contact Us</h1>
+
+    <h3 class="light">
+      Janet O’Neil – joneil@fdu.edu<br>
+      285 Madison Ave. MDBO-01, Madison, NJ 07940<br>
+      973-443-8470
+    </h3>
+
+    <p class="bold w-70 left">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    </p>
+
+    <div id="form_container">
+      <form class="blue-bg" action="public/api/contact" method="post">
+        <div id="form_sidebar"></div>
+
+        <h3 class="light italic p-20">Contact the FDU Graphic Design Department</h3>
+
+        <input type="text" placeholder="Full Name" data-name="full_name"></input>
+        <input type="email" placeholder="Email" data-name="email"></input>
+        <input type="tel" placeholder="Telephone" data-name="telephone"></input>
+        <textarea placeholder="Message" data-name="message" data-type="text"></textarea>
+
+        <br>
+
+        <button id="contact_page_submit" type="button">CONTACT</button>
+
+        <br><br>
+      </form>
+      <div class="clear-float"></div>
+    </div>
+
+    <div id="footer">
+    </div>
+  </body>
+
+  <script src="public/js/tools.js" charset="utf-8"></script>
+  <script src="public/js/main.js" charset="utf-8"></script>
+
+</html>
