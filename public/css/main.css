@@ -457,6 +457,14 @@ img.bubble {
   clear: both;
 }
 
+#calendar_wrapper {
+  margin: 20vh 0 0 0;
+}
+
+.calendar-container {
+  box-shadow: 0 0 30px rgba(0,0,0,0.2);
+}
+
 @media (max-width: 749px) {
   #form_sidebar {
     height: 534px;

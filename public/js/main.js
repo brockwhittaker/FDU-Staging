@@ -7,6 +7,16 @@ window.onload = function () {
   formSidebar.css("height", form[0].clientHeight + "px");
 };
 
+var partials = {
+  loadBanner: function ($node, path) {
+    $.get(path, function (response) {
+      $node.html(response);
+    });
+  }
+};
+
+partials.loadBanner($("#banner"), "public/partials/banner.html");
+
 
 $("button[type=button]").click(function () {
   $("form").form({

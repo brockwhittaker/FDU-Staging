@@ -1,0 +1,186 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900,300italic);
+
+* {
+  font-family: "Roboto", "Helvetica Neue", "Helvetica", Arial, sans-serif;
+}
+
+body {
+  text-align: center;
+}
+
+.calendar-container {
+  position: relative;
+  display: inline-block;
+
+  max-height: 100%;
+  overflow-y: hidden;
+
+  cursor: pointer;
+}
+
+.brock-calendar {
+  width: 100%;
+
+  margin: 0 auto;
+  background-color: #FAFAFA;
+}
+
+.calendar-container .calendar-nav {
+  background-color: rgb(201, 95, 124);
+  padding: 10px;
+}
+
+.calendar-nav .month-button {
+  font-size: 20pt;
+  font-weight: 200;
+  color: white;
+  display: inline-block;
+}
+
+.calendar-nav #prev_month {
+  float: left;
+}
+
+.calendar-nav #next_month {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+.brock-calendar tr {
+
+}
+
+.brock-calendar tr:nth-of-type(2n - 1) {
+  background-color: #eee;
+}
+
+.brock-calendar td {
+  height: 100px;
+  width: 14.2857142857%;
+
+  text-align: center;
+
+  font-weight: 300;
+  font-size: 16pt;
+
+  color: #444;
+
+  transition: all 0.2s ease;
+}
+
+thead tr {
+  height: 40px;
+  padding: 10px 0px;
+}
+
+thead tr th {
+  font-weight: 300;
+  border-bottom: 3px solid rgb(201, 95, 124);
+  margin: 10px;
+}
+
+td {
+  width: 100px;
+  cursor: pointer;
+}
+
+td p {
+  margin: 0;
+}
+
+td .date {
+  font-size: 22pt;
+  font-weight: 200;
+}
+
+td .month {
+  font-size: 9pt;
+  font-weight: 400;
+}
+
+td .num-events {
+  font-size: 8pt;
+  color: rgb(133, 192, 208);
+}
+
+.brock-calendar .calendar-selection {
+  background-color: rgb(201, 95, 124);
+  color: #FAFAFA;
+}
+
+.brock-calendar .current-date {
+  background-color: rgb(133, 192, 208);
+  color: #FAFAFA;
+}
+
+#events_container {
+  display: inline-block;
+
+  width: 100%;
+  height: 0px;
+
+  background-color: rgb(201, 95, 124);
+  color: #FAFAFA;
+
+  transition: all 0.5s ease;
+}
+
+#events_container #events_exit {
+  text-align: right;
+  font-weight: 100;
+  font-size: 20pt;
+
+  margin: 5px 15px 0 0;
+
+  cursor: pointer;
+}
+
+#events_container {
+  position: absolute;
+
+  opacity: 1;
+  height: 300px;
+  bottom: -300px;
+  left: 0px;
+
+  overflow-y: scroll;
+}
+
+#events_container.visible {
+  opacity: 0.98;
+  transform: translateY(-300px);
+}
+
+#events_container h1 {
+  width: 80%;
+
+  margin: 0px auto auto auto;
+  padding-bottom: 10px;
+
+  font-size: 20pt;
+  font-weight: 200;
+  text-align: center;
+
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+#events_container #events_box {
+  text-align: left;
+  width: 80%;
+
+  margin: 10px auto;
+}
+
+.transition {
+  -webkit-filter: opacity(50%) brightness(0.2);
+  -moz-filter: opacity(50%) brightness(0.2);
+  filter: opacity(50%) brightness(0.2);
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+.grey {
+  color: #ccc !important;
+}
