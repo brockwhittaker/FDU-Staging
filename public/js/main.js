@@ -4,7 +4,8 @@ window.onload = function () {
   var formSidebar = $("#form_sidebar"),
       form = $("form");
 
-  formSidebar.css("height", form[0].clientHeight + "px");
+  if (form[0])
+    formSidebar.css("height", form[0].clientHeight + "px");
 };
 
 var partials = {

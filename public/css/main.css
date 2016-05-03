@@ -37,7 +37,7 @@ body {
 }
 
 #banner {
-  height: 30vh;
+  height: 30vw;
 }
 
 #footer {
@@ -52,16 +52,17 @@ body {
 #banner #written_logo {
   display: inline-block;
   position: relative;
-  top: 8px;
-
-  margin-top: calc(5vw - 50px);
 
   color: #FAFAFA;
 }
 
+#written_logo h2 {
+  font-size: 3.5vw;
+}
+
 #written_logo .custom-logo-subtext {
   margin: -5px 0 0 0;
-  font-size: 10.2pt;
+  font-size: 1.3vw;
 }
 
 #banner nav {
@@ -70,23 +71,24 @@ body {
 
 #banner nav ul {
   list-style-type: none;
-
+  padding: 0;
   color: #FFF;
 }
 
 ul li {
   display: inline-block;
   vertical-align: top;
+  text-align: left;
 
-  margin: 0px 10px;
+  margin: 0px 1vw;
 
-  width: 100px;
+  width: 11vw;
 
   text-transform: uppercase;
 
-  font-size: 10pt;
+  font-size: 1.3vw;
   font-weight: 600;
-  letter-spacing: 1pt;
+  letter-spacing: 0.2vw;
 }
 
 #home_bg {
@@ -458,7 +460,7 @@ img.bubble {
 }
 
 #calendar_wrapper {
-  margin: 20vh 0 0 0;
+  margin: 25vh 0 0 0;
 }
 
 .calendar-container {
@@ -471,6 +473,58 @@ img.bubble {
   }
 }
 
-@media (max-width: 905px) {
+@media (min-width: 700px) {
+  #written_logo h2 {
+    font-size: 2vw;
+  }
 
+  #written_logo .custom-logo-subtext {
+    margin: -5px 0 0 0;
+    font-size: 1vw;
+  }
+
+  #banner {
+    height: 18vw;
+  }
+
+  #banner #written_logo {
+    position: relative;
+    top: 1vw;
+    margin-right: 5vw;
+  }
+
+  #banner a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  #banner ul a:hover {
+    text-decoration: underline;
+  }
+
+  #banner nav {
+    display: inline-block;
+  }
+
+  #banner nav ul {
+    list-style-type: none;
+    margin-top: 3vw;
+    padding: 0;
+    color: #FFF;
+  }
+
+  ul li {
+    display: inline-block;
+    vertical-align: top;
+
+    margin: 0px 0.5vw;
+
+    width: 8vw;
+
+    text-transform: uppercase;
+
+    font-size: 1vw;
+    font-weight: 600;
+    letter-spacing: 0.13vw;
+  }
 }
