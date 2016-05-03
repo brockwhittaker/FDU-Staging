@@ -40,6 +40,15 @@ body {
   height: 30vw;
 }
 
+#banner a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#banner ul a:hover {
+  text-decoration: underline;
+}
+
 #footer {
   position: relative;
   top: inherit;
@@ -179,7 +188,8 @@ li a {
   height: 130px;
 }
 
-#form_container button {
+#form_container button,
+button.button {
   background-color: #015697;
   padding: 15px 25px 10px 25px;
   font-family: "Bebas Neue", "Open Sans", Helvetica, Arial, sans-serif;
@@ -193,16 +203,53 @@ li a {
   transition: all 0.3s ease;
 }
 
-#form_container button:hover {
+#form_container button:hover,
+button.button:hover {
   filter: brightness(1.1);
   -webkit-filter: brightness(1.1);
   -moz-filter: brightness(1.1);
 }
 
-#form_container button:active {
+#form_container button:active,
+button.button:active {
   filter: brightness(0.9);
   -webkit-filter: brightness(0.9);
   -moz-filter: brightness(0.9);
+}
+
+button.button.red {
+  background-color: #7c0817;
+}
+
+.career-overlay {
+  width: 100%;
+  height: 40vw;
+  background-size: cover;
+  background-position: center center;
+}
+
+#careers_f_slide {
+  height: 60vw;
+  background-image: url(../assets/careers-first-slide.png);
+}
+
+#blurry_desk {
+  background-image: url(../assets/blurry-desk.jpg);
+}
+
+#blurry_ipad {
+  background-image: url(../assets/blurry-ipad.jpg);
+}
+
+#blurry_desk_2 {
+  background-image: url(../assets/blurry-desk-2.jpg);
+}
+
+.h-banner {
+  padding: 50px;
+  background-image: url(../assets/horiz-banner.jpg);
+  background-size: cover;
+  background-position: center center;
 }
 
 blockquote {
@@ -394,6 +441,10 @@ img.bubble {
   padding: 50px;
 }
 
+.p-bottom-50 {
+  padding-bottom: 50px;
+}
+
 .h-80 {
   height: 80px;
 }
@@ -489,17 +540,8 @@ img.bubble {
 
   #banner #written_logo {
     position: relative;
-    top: 1vw;
+    top: 0vw;
     margin-right: 5vw;
-  }
-
-  #banner a {
-    color: #fff;
-    text-decoration: none;
-  }
-
-  #banner ul a:hover {
-    text-decoration: underline;
   }
 
   #banner nav {
