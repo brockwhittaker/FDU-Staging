@@ -58,6 +58,10 @@ body {
   background-image: url(../assets/footer.png);
 }
 
+.cs-footer {
+  margin-top: -15vw;
+}
+
 #tutoring_bg {
   background-image: url(../assets/tutoring_bg.jpg);
 }
@@ -137,7 +141,7 @@ ul li {
 
 #contact_hero,
 #submit_portfolio_hero {
-  background-image: url(../assets/contact_hero.png);
+  background-image: url(../assets/contact_hero.jpg);
   background-size: cover;
   background-position: center center;
 
