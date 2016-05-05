@@ -58,6 +58,18 @@ body {
   background-image: url(../assets/footer.png);
 }
 
+#tutoring_bg {
+  background-image: url(../assets/tutoring_bg.jpg);
+}
+
+#academic_center_bg {
+  background-image: url(../assets/academic_center_bg.jpg);
+}
+
+#contact_eof_bg {
+  background-image: url(../assets/contact_eof_bg.jpg);
+}
+
 #banner #written_logo {
   display: inline-block;
   position: relative;
@@ -107,7 +119,7 @@ ul li {
   text-align: center;
 
   background-image: url(../assets/home_bg.jpg);
-  background-size: 100% auto;
+  background-size: cover;
   background-position: center center;
 }
 
@@ -252,6 +264,24 @@ button.button.red {
   background-position: center center;
 }
 
+.resource-slide {
+  background-size: cover;
+  background-position: center center;
+
+  padding: 15vw 15vw;
+  text-align: left;
+}
+
+.resource-slide.right {
+  text-align: right;
+}
+
+.resource-slide.right p {
+  margin-left: auto;
+  margin-right: 0;
+  text-align: left;
+}
+
 blockquote {
   display: inline-block;
 
@@ -332,7 +362,7 @@ img.bubble {
 .w-33 {
   display: inline-block;
 
-  width: 33%;
+  width: 31%;
 }
 
 .w-40 {
@@ -381,7 +411,7 @@ img.bubble {
   margin-left: auto;
 
   background-image: url(../assets/tabs.png);
-  background-size: 100% 100%;
+  background-size: cover;
 }
 
 .date {
@@ -449,9 +479,19 @@ img.bubble {
   height: 80px;
 }
 
+.margin-center {
+  margin: 0 auto;
+}
+
 .no-padding-sides {
   padding-left: 0 !important;
   padding-right: 0 !important;
+}
+
+.no-img {
+  background-image: none !important;
+  background-color: #444;
+  box-shadow: inset 0 0 100px rgba(0,0,0,0.4);
 }
 
 .italic {
