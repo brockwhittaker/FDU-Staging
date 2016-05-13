@@ -17,6 +17,9 @@ body {
 
   margin: 0;
 
+  max-width: 100vw;
+  overflow-x: hidden;
+
   text-align: center;
 }
 
@@ -34,6 +37,38 @@ body {
 
   background-image: url(../assets/banner.png);
   background-size: 100% 100%;
+}
+
+#social_media {
+  position: absolute;
+  bottom: 1vw;
+  left: 5vw;
+}
+
+#social_media .icon {
+  display: inline-block;
+
+  width: 2.5vw;
+  height: 2.5vw;
+
+  margin-right: 1vw;
+
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+  cursor: pointer;
+}
+
+#facebook.icon {
+  background-image: url(../assets/facebook-icon.png);
+}
+
+#twitter.icon {
+  background-image: url(../assets/twitter-icon.png);
+}
+
+#instagram.icon {
+  background-image: url(../assets/linkedin-icon.png);
 }
 
 #banner {
