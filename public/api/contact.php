@@ -1,4 +1,6 @@
 <?php
+require_once "email.php";
+
 $full_name = $_POST["full_name"];
 $email = $_POST["email"];
 $telephone = $_POST["telephone"];
@@ -10,4 +12,6 @@ echo json_encode(array(
   "telephone" => $telephone,
   "message" => $message
 ));
+
+sendEmail("joneil@fdu.edu", "Contact from $full_name at $email. P/N: $telephone", $message);
 ?>
